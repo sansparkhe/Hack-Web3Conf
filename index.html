@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simon_says</title>
+    <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <!-- h2 will get upadated to current level value -->
+    <h2>press start key to start game</h2>
+    <p><b>Instruction:</b>remember the sequence for better result</p>
+    <button class="start">Start</button>
+    <button class="help">help</button>
+     <div class="container">
+        <div class="line1">
+    <div class="btn_1 green" type="button" id="green">1</div>
+    <div class="btn_2 red" type="button" id="red">2</div>
+</div>
+    <div class="line2">
+    <div class="btn_3 blue" type="button" id="blue">3</div>
+    <div class="btn_4 yellow" type="button" id="yellow">4</div>
+</div>
+     </div>
+     <div class="help_instructions" style="display:none">
+        <ul>
+            <h2>Game Instructions</h2>
+            <li>1. Click the buttons in the correct sequence.</li>
+            <li>2. The sequence will change after each round.</li>
+            <li>3. Remember the sequence to score higher.</li>
+        </ul>
+     </div>
+     <audio id="myAudio">
+        <source src="simon.wav" type="audio/wav">
+         
+      </audio>
+    <script src="simon.js"></script>
+</body>
+</html>
